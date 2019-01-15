@@ -11,18 +11,31 @@
 
 
 PointArray::PointArray() {
-    pointPtr = new Point();
+    pointPtr = new Point[0];
     arraySize = 0;
 }
 
-PointArray::PointArray(const Point points[], const int size) {
+PointArray::PointArray(Point points[], int size) {
     pointPtr = new Point[size];
-    for (int i = 0; i < size; i++) {
-        *(pointPtr + i) = points[i];
-    }
+    arraySize = size;
     
-    PointArray::PointArray(const PointArray &pv) {
-        
+    for (int i = 0; i < arraySize; i++) {
+        pointPtr[i] = points[i];
     }
     
 }
+
+PointArray::PointArray(const PointArray& pv) {
+    pointPtr = new Point[pv.arraySize];
+    arraySize = pv.arraySize;
+    
+    for (int i = 0; i < arraySize; i++) {
+        pointPtr[i] = pv.pointPtr[i];
+    }
+}
+
+PointArray::~PointArray() {
+    delete [] pointPtr;
+}
+
+

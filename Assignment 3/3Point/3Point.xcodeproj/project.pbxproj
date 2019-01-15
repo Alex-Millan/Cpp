@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3A6D4821E5642F00132572 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3A6D4721E5642F00132572 /* main.cpp */; };
-		FA3A6D5221E565C200132572 /* geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3A6D5121E565C200132572 /* geometry.cpp */; };
+		FA5C9FBC21EDBE2600B8A2E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5C9FBB21EDBE2600B8A2E3 /* main.cpp */; };
+		FA5C9FC421EDBE4100B8A2E3 /* geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5C9FC221EDBE4100B8A2E3 /* geometry.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FA3A6D4221E5642F00132572 /* CopyFiles */ = {
+		FA5C9FB621EDBE2600B8A2E3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +24,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA3A6D4421E5642F00132572 /* 3 Point */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "3 Point"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3A6D4721E5642F00132572 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FA3A6D4F21E5651300132572 /* geometry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = geometry.hpp; sourceTree = "<group>"; };
-		FA3A6D5121E565C200132572 /* geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = geometry.cpp; sourceTree = "<group>"; };
+		FA5C9FB821EDBE2600B8A2E3 /* 3Point */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; includeInIndex = 0; path = 3Point; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA5C9FBB21EDBE2600B8A2E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FA5C9FC221EDBE4100B8A2E3 /* geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = geometry.cpp; path = 3Point/geometry.cpp; sourceTree = SOURCE_ROOT; };
+		FA5C9FC321EDBE4100B8A2E3 /* geometry.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = geometry.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA3A6D4121E5642F00132572 /* Frameworks */ = {
+		FA5C9FB521EDBE2600B8A2E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,113 +41,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA3A6D3B21E5642F00132572 = {
+		FA5C9FAF21EDBE2600B8A2E3 = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4621E5642F00132572 /* 3 Point */,
-				FA3A6D4521E5642F00132572 /* Products */,
+				FA5C9FBA21EDBE2600B8A2E3 /* 3Point */,
+				FA5C9FB921EDBE2600B8A2E3 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
-		FA3A6D4521E5642F00132572 /* Products */ = {
+		FA5C9FB921EDBE2600B8A2E3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4421E5642F00132572 /* 3 Point */,
+				FA5C9FB821EDBE2600B8A2E3 /* 3Point */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA3A6D4621E5642F00132572 /* 3 Point */ = {
+		FA5C9FBA21EDBE2600B8A2E3 /* 3Point */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4E21E564CD00132572 /* include */,
-				FA3A6D5021E5659600132572 /* src */,
+				FA5C9FBB21EDBE2600B8A2E3 /* main.cpp */,
+				FA5C9FC221EDBE4100B8A2E3 /* geometry.cpp */,
+				FA5C9FC321EDBE4100B8A2E3 /* geometry.hpp */,
 			);
-			path = "3 Point";
-			sourceTree = "<group>";
-		};
-		FA3A6D4E21E564CD00132572 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				FA3A6D4F21E5651300132572 /* geometry.hpp */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		FA3A6D5021E5659600132572 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				FA3A6D4721E5642F00132572 /* main.cpp */,
-				FA3A6D5121E565C200132572 /* geometry.cpp */,
-			);
-			path = src;
+			path = 3Point;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA3A6D4321E5642F00132572 /* 3 Point */ = {
+		FA5C9FB721EDBE2600B8A2E3 /* 3Point */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA3A6D4B21E5642F00132572 /* Build configuration list for PBXNativeTarget "3 Point" */;
+			buildConfigurationList = FA5C9FBF21EDBE2600B8A2E3 /* Build configuration list for PBXNativeTarget "3Point" */;
 			buildPhases = (
-				FA3A6D4021E5642F00132572 /* Sources */,
-				FA3A6D4121E5642F00132572 /* Frameworks */,
-				FA3A6D4221E5642F00132572 /* CopyFiles */,
+				FA5C9FB421EDBE2600B8A2E3 /* Sources */,
+				FA5C9FB521EDBE2600B8A2E3 /* Frameworks */,
+				FA5C9FB621EDBE2600B8A2E3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "3 Point";
-			productName = "3 Point";
-			productReference = FA3A6D4421E5642F00132572 /* 3 Point */;
+			name = 3Point;
+			productName = 3Point;
+			productReference = FA5C9FB821EDBE2600B8A2E3 /* 3Point */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA3A6D3C21E5642F00132572 /* Project object */ = {
+		FA5C9FB021EDBE2600B8A2E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = KALIYA;
 				TargetAttributes = {
-					FA3A6D4321E5642F00132572 = {
+					FA5C9FB721EDBE2600B8A2E3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = FA3A6D3F21E5642F00132572 /* Build configuration list for PBXProject "3 Point" */;
+			buildConfigurationList = FA5C9FB321EDBE2600B8A2E3 /* Build configuration list for PBXProject "3Point" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FA3A6D3B21E5642F00132572;
-			productRefGroup = FA3A6D4521E5642F00132572 /* Products */;
+			mainGroup = FA5C9FAF21EDBE2600B8A2E3;
+			productRefGroup = FA5C9FB921EDBE2600B8A2E3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA3A6D4321E5642F00132572 /* 3 Point */,
+				FA5C9FB721EDBE2600B8A2E3 /* 3Point */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA3A6D4021E5642F00132572 /* Sources */ = {
+		FA5C9FB421EDBE2600B8A2E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3A6D4821E5642F00132572 /* main.cpp in Sources */,
-				FA3A6D5221E565C200132572 /* geometry.cpp in Sources */,
+				FA5C9FBC21EDBE2600B8A2E3 /* main.cpp in Sources */,
+				FA5C9FC421EDBE4100B8A2E3 /* geometry.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FA3A6D4921E5642F00132572 /* Debug */ = {
+		FA5C9FBD21EDBE2600B8A2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +191,7 @@
 			};
 			name = Debug;
 		};
-		FA3A6D4A21E5642F00132572 /* Release */ = {
+		FA5C9FBE21EDBE2600B8A2E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,20 +243,15 @@
 			};
 			name = Release;
 		};
-		FA3A6D4C21E5642F00132572 /* Debug */ = {
+		FA5C9FC021EDBE2600B8A2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				"HEADER_SEARCH_PATHS[arch=*]" = (
-					"-I",
-					include,
-				);
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FA3A6D4D21E5642F00132572 /* Release */ = {
+		FA5C9FC121EDBE2600B8A2E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -282,25 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA3A6D3F21E5642F00132572 /* Build configuration list for PBXProject "3 Point" */ = {
+		FA5C9FB321EDBE2600B8A2E3 /* Build configuration list for PBXProject "3Point" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA3A6D4921E5642F00132572 /* Debug */,
-				FA3A6D4A21E5642F00132572 /* Release */,
+				FA5C9FBD21EDBE2600B8A2E3 /* Debug */,
+				FA5C9FBE21EDBE2600B8A2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA3A6D4B21E5642F00132572 /* Build configuration list for PBXNativeTarget "3 Point" */ = {
+		FA5C9FBF21EDBE2600B8A2E3 /* Build configuration list for PBXNativeTarget "3Point" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA3A6D4C21E5642F00132572 /* Debug */,
-				FA3A6D4D21E5642F00132572 /* Release */,
+				FA5C9FC021EDBE2600B8A2E3 /* Debug */,
+				FA5C9FC121EDBE2600B8A2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA3A6D3C21E5642F00132572 /* Project object */;
+	rootObject = FA5C9FB021EDBE2600B8A2E3 /* Project object */;
 }

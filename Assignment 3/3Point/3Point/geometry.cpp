@@ -10,6 +10,11 @@
 #include "geometry.hpp"
 
 
+const void Point::printPoint() {
+    std::cout << "Point ";
+    std::cout << "x: " << x << "    y: " << y << std::endl;
+}
+
 PointArray::PointArray() {
     pointPtr = new Point[0];
     arraySize = 0;

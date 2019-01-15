@@ -20,8 +20,9 @@ public:
     int const getX() { return x; }
     int const getY() { return y; }
     void setX(const int new_x) { x = new_x; }
-    
     void setY(const int new_y) { y = new_y; }
+    const void printPoint();
+    
 };
 
 

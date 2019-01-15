@@ -8,9 +8,16 @@
 
 #include <iostream>
 #include "geometry.hpp"
+#include "unitTest.hpp"
+
+#define ARRAY_SIZE 50
+
+
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, Worldssss!\n";
+    UnitTest *testFunctions = new UnitTest();
+    testFunctions->test_point();
+    
     return 0;
 }

@@ -36,6 +36,8 @@ public:
     void test_pointArray_getSize();
     void test_pointArray_clear();
     void test_pointArray_getPoint();
+    
+    int test_polygon_counter();
 
 };
 

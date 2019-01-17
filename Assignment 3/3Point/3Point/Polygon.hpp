@@ -13,7 +13,7 @@
 #include "geometry.hpp"
 
 class Polygon {
-private:
+protected:
     PointArray shape_points;
     static int polyCounter;
 public:

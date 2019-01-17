@@ -36,7 +36,7 @@ public:
 
     PointArray();
     PointArray(const Point points[], const int size);
-    PointArray(const PointArray& pv);
+    PointArray(const PointArray &pv);
     ~PointArray();
     
     void push_back(const Point &p);
@@ -46,6 +46,20 @@ public:
     void clear();
     Point *get(const int position);
     const Point *get(const int position) const;
+    
+};
+
+class Polygon {
+protected:
+    PointArray shape_points;
+    static int polyCounter;
+public:
+    Polygon(Point p[], const int arraySize);
+    Polygon(PointArray *pArray);
+    Polygon();
+    ~Polygon();
+    
+    int getCount();
     
 };
 #endif /* geometry__hpp */

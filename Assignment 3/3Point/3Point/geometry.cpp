@@ -107,3 +107,32 @@ const Point *PointArray::get(const int position) const {
     }
     return &pointPtr[position];
 }
+
+
+//initializes polyCounter
+int Polygon::polyCounter = 0;
+
+Polygon::Polygon(Point p[], const int arraySize) : shape_points(p, arraySize) {
+    for (int i = 0; i < arraySize; i++) {
+        shape_points.push_back(p[i]);
+    }
+    polyCounter++;
+}
+
+Polygon::Polygon() {
+    polyCounter++;
+}
+Polygon::Polygon(PointArray *pArray) {
+    shape_points = *pArray;
+    
+}
+
+Polygon::~Polygon() {
+    polyCounter--;
+}
+
+    
+
+int Polygon::getCount() {
+    return polyCounter;
+}

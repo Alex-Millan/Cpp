@@ -21,6 +21,7 @@ void UnitTest::test_point() {
     
     test_point_get(myPoint, testX, testY);
     test_point_set(myPoint, 3, 14);
+    test_polygon_counter();
     
 }
 
@@ -35,6 +36,15 @@ void UnitTest::test_point_set(Point *p, int setX, int setY) {
     assert(p->getX() == setX);
     assert(p->getY() == setY);
     cout << "Point set function pass" << endl;
+}
+
+int UnitTest::test_polygon_counter() {
+    Polygon poly1;
+    Polygon poly2;
+    Polygon poly3;
+    assert(poly1.getCount() == 3);
+    cout << "Poly counter works" << endl;
+    return poly1.getCount();
 }
 
 void test_pointArray();

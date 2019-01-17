@@ -8,4 +8,7 @@
 
 #include "Polygon.hpp"
 
+Polygon::Polygon(Point p[], const int arraySize) : shape_points(p, arraySize) {
+    polyCounter++;
+}
 

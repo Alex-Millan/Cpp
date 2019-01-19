@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA3A6D4821E5642F00132572 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3A6D4721E5642F00132572 /* main.cpp */; };
-		FA3A6D5221E565C200132572 /* geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA3A6D5121E565C200132572 /* geometry.cpp */; };
+		FA1B23E521F2BD0900294612 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA1B23E421F2BD0900294612 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FA3A6D4221E5642F00132572 /* CopyFiles */ = {
+		FA1B23DF21F2BD0900294612 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,14 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		FA3A6D4421E5642F00132572 /* 3 Point */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "3 Point"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA3A6D4721E5642F00132572 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		FA3A6D4F21E5651300132572 /* geometry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = geometry.hpp; sourceTree = "<group>"; };
-		FA3A6D5121E565C200132572 /* geometry.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = geometry.cpp; sourceTree = "<group>"; };
+		FA1B23E121F2BD0900294612 /* Pig_Latin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Pig_Latin; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1B23E421F2BD0900294612 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FA3A6D4121E5642F00132572 /* Frameworks */ = {
+		FA1B23DE21F2BD0900294612 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,113 +38,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA3A6D3B21E5642F00132572 = {
+		FA1B23D821F2BD0900294612 = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4621E5642F00132572 /* 3 Point */,
-				FA3A6D4521E5642F00132572 /* Products */,
+				FA1B23E321F2BD0900294612 /* Pig_Latin */,
+				FA1B23E221F2BD0900294612 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FA3A6D4521E5642F00132572 /* Products */ = {
+		FA1B23E221F2BD0900294612 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4421E5642F00132572 /* 3 Point */,
+				FA1B23E121F2BD0900294612 /* Pig_Latin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FA3A6D4621E5642F00132572 /* 3 Point */ = {
+		FA1B23E321F2BD0900294612 /* Pig_Latin */ = {
 			isa = PBXGroup;
 			children = (
-				FA3A6D4E21E564CD00132572 /* include */,
-				FA3A6D5021E5659600132572 /* src */,
+				FA1B23E421F2BD0900294612 /* main.cpp */,
 			);
-			path = "3 Point";
-			sourceTree = "<group>";
-		};
-		FA3A6D4E21E564CD00132572 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				FA3A6D4F21E5651300132572 /* geometry.hpp */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		FA3A6D5021E5659600132572 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				FA3A6D4721E5642F00132572 /* main.cpp */,
-				FA3A6D5121E565C200132572 /* geometry.cpp */,
-			);
-			path = src;
+			path = Pig_Latin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA3A6D4321E5642F00132572 /* 3 Point */ = {
+		FA1B23E021F2BD0900294612 /* Pig_Latin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA3A6D4B21E5642F00132572 /* Build configuration list for PBXNativeTarget "3 Point" */;
+			buildConfigurationList = FA1B23E821F2BD0900294612 /* Build configuration list for PBXNativeTarget "Pig_Latin" */;
 			buildPhases = (
-				FA3A6D4021E5642F00132572 /* Sources */,
-				FA3A6D4121E5642F00132572 /* Frameworks */,
-				FA3A6D4221E5642F00132572 /* CopyFiles */,
+				FA1B23DD21F2BD0900294612 /* Sources */,
+				FA1B23DE21F2BD0900294612 /* Frameworks */,
+				FA1B23DF21F2BD0900294612 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "3 Point";
-			productName = "3 Point";
-			productReference = FA3A6D4421E5642F00132572 /* 3 Point */;
+			name = Pig_Latin;
+			productName = Pig_Latin;
+			productReference = FA1B23E121F2BD0900294612 /* Pig_Latin */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FA3A6D3C21E5642F00132572 /* Project object */ = {
+		FA1B23D921F2BD0900294612 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = KALIYA;
 				TargetAttributes = {
-					FA3A6D4321E5642F00132572 = {
+					FA1B23E021F2BD0900294612 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = FA3A6D3F21E5642F00132572 /* Build configuration list for PBXProject "3 Point" */;
+			buildConfigurationList = FA1B23DC21F2BD0900294612 /* Build configuration list for PBXProject "Pig_Latin" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FA3A6D3B21E5642F00132572;
-			productRefGroup = FA3A6D4521E5642F00132572 /* Products */;
+			mainGroup = FA1B23D821F2BD0900294612;
+			productRefGroup = FA1B23E221F2BD0900294612 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA3A6D4321E5642F00132572 /* 3 Point */,
+				FA1B23E021F2BD0900294612 /* Pig_Latin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FA3A6D4021E5642F00132572 /* Sources */ = {
+		FA1B23DD21F2BD0900294612 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA3A6D4821E5642F00132572 /* main.cpp in Sources */,
-				FA3A6D5221E565C200132572 /* geometry.cpp in Sources */,
+				FA1B23E521F2BD0900294612 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		FA3A6D4921E5642F00132572 /* Debug */ = {
+		FA1B23E621F2BD0900294612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -206,7 +184,7 @@
 			};
 			name = Debug;
 		};
-		FA3A6D4A21E5642F00132572 /* Release */ = {
+		FA1B23E721F2BD0900294612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -258,20 +236,15 @@
 			};
 			name = Release;
 		};
-		FA3A6D4C21E5642F00132572 /* Debug */ = {
+		FA1B23E921F2BD0900294612 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				"HEADER_SEARCH_PATHS[arch=*]" = (
-					"-I",
-					include,
-				);
-				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		FA3A6D4D21E5642F00132572 /* Release */ = {
+		FA1B23EA21F2BD0900294612 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -282,25 +255,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA3A6D3F21E5642F00132572 /* Build configuration list for PBXProject "3 Point" */ = {
+		FA1B23DC21F2BD0900294612 /* Build configuration list for PBXProject "Pig_Latin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA3A6D4921E5642F00132572 /* Debug */,
-				FA3A6D4A21E5642F00132572 /* Release */,
+				FA1B23E621F2BD0900294612 /* Debug */,
+				FA1B23E721F2BD0900294612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA3A6D4B21E5642F00132572 /* Build configuration list for PBXNativeTarget "3 Point" */ = {
+		FA1B23E821F2BD0900294612 /* Build configuration list for PBXNativeTarget "Pig_Latin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FA3A6D4C21E5642F00132572 /* Debug */,
-				FA3A6D4D21E5642F00132572 /* Release */,
+				FA1B23E921F2BD0900294612 /* Debug */,
+				FA1B23EA21F2BD0900294612 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FA3A6D3C21E5642F00132572 /* Project object */;
+	rootObject = FA1B23D921F2BD0900294612 /* Project object */;
 }

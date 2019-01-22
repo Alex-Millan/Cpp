@@ -17,20 +17,45 @@ void Game::draw() {
 }
 
 int Game::handValue() {
-    return 0;
+    int sum = 0;
+    bool Ace_card = false;
+    for (int i = 0; i < hand.size(); i++) {
+        hand.at(i) > 10 ? sum += 10 : sum += hand.at(i);
+        if(hand.at(i) == 1) {
+            Ace_card = true;
+        }
+     }
+    // turn the Ace to 11 as long as you don't bust
+    if(Ace_card) {
+        if((sum + 10) <= 21) {
+            sum+= 10; // note since we already added a 1 adding a 10 will make it adding an 11 total
+        }
+    }
+    
+    return sum;
+}
+
+int Game::cardsRemaining() {
+    return gameDeck.getCardsRemaining();
 }
 
 
 
 void Player::viewHand() {
-    cout << "Your hand is " << endl;
+    cout << "Your hand is: " ;
     for (int i = 0; i < hand.size(); i++) {
-        cout << hand.at(i) << " " << endl;
+        cout << hand.at(i) << " " ;
     }
+    cout << endl;
     
 }
 
-//Dealer has 1 card face down that only he knows
+//Dealer has 1 card face down that only they know
 void Dealer::viewHand() {
+    cout << "Dealers hand: " << endl;
+    for (int i = 0; i < hand.size()-1; i++) {
+        cout << hand.at(i) << " ";
+    }
+    cout << endl;
 
 }

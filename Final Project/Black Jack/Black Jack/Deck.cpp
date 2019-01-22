@@ -29,11 +29,11 @@ Deck::Deck() {
 
 
 int Deck::drawCard() {
-    srand((unsigned int)time(NULL));
+    srand((unsigned int)time(NULL)); // creates a random seed with current time.
     int randomDraw = rand() % cards.size();
     
     int card_Value = cards[randomDraw];
-    cout << "A " << card_Value << " was drawn. " << endl;
+    //cout << "A " << card_Value << " was drawn. " << endl;
     cards.erase(cards.begin() + randomDraw);
     return card_Value;
     

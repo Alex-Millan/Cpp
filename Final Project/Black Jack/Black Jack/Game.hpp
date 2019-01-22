@@ -25,9 +25,8 @@ protected:
 public:
     void draw();
     int handValue();    // returns your the value of all your cards (10-13 are all valued as 10 in black jack)
-    
+    int cardsRemaining();
     virtual void viewHand() = 0;    // prints your current hand on screen, dealer hides 1 card (Face down) 
-    
 };
 
 class Dealer : public Game {

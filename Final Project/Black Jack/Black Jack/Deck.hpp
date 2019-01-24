@@ -26,6 +26,7 @@ public:
     int drawCard();
     void reinit();
     int getCardsRemaining();
+    void dealerTurn();
 };
 
 #endif /* Deck_hpp */

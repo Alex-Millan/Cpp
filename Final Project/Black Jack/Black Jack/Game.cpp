@@ -39,12 +39,16 @@ int Game::cardsRemaining() {
     return gameDeck.getCardsRemaining();
 }
 
+bool Game::gameOver() {
+    return handValue() > MAX_VALUE ? true : false;
+}
+
 
 
 void Player::viewHand() {
     cout << "Your hand is: " ;
     for (int i = 0; i < hand.size(); i++) {
-        cout << hand.at(i) << " " ;
+        cout << cardName[hand.at(i)] << " " ;
     }
     cout << endl;
     
@@ -52,10 +56,20 @@ void Player::viewHand() {
 
 //Dealer has 1 card face down that only they know
 void Dealer::viewHand() {
-    cout << "Dealers hand: " << endl;
-    for (int i = 0; i < hand.size()-1; i++) {
-        cout << hand.at(i) << " ";
+    cout << "Dealer's hand: " ;
+    if(!isDealerTurn) {
+        cout << cardName[hand.at(0)] << " and 1 face down card";
+    } else {
+        for (int i = 0; i < hand.size(); i++) {
+            cout << cardName[hand.at(i)] << " ";
+        }
+    
     }
     cout << endl;
-
 }
+
+void Dealer::dealerTurn() {
+    isDealerTurn = true;
+}
+
+

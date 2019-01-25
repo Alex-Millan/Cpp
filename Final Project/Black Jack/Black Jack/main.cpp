@@ -22,14 +22,20 @@ bool dealerWins(Dealer dealer, Player p1) {
     if(p1.gameOver()) {
         return true;
     }
-    if(dealer.handValue() > p1.handValue()) {
+    if(dealer.handValue() > p1.handValue() && !dealer.gameOver()) {
         return true;
     }
     return false;
 }
 
 bool isTied(Dealer dealer, Player p1) {
-    return dealer.handValue() == p1.handValue() ? true : false;
+    if(dealer.handValue() == p1.handValue()) {
+        return true;
+    }else if(dealer.gameOver() && p1.gameOver()) {
+        return true;
+    } else {
+        return false;
+    }
 }
 
 
@@ -52,7 +58,7 @@ void controller(Game *p) {
     while(1) {
     p->viewHand();
         if(p->gameOver()) {
-            cout << "BUST, better luck next time!" << endl;
+            cout << "BUST, better luck next time! " ;
             return;
         }
     cout << "Hit (h) Stand (s) or Split (p): ";
@@ -80,12 +86,13 @@ void controller(Game *p) {
 int main(int argc, const char * argv[]) {
     // insert code here...
     Deck myDeck;
-    Player player1;
-    Dealer opponent;
-    
     // plays 5 games
+    myDeck.shuffle(5);
     for (int i = 0; i < 5; i++) {
-
+        
+        Player player1;
+        Dealer opponent;
+        
         
         player1.draw();
         opponent.draw();
@@ -97,9 +104,11 @@ int main(int argc, const char * argv[]) {
         cout << "Final Hand Value: " << player1.handValue() << endl;
         
         
-        opponent.dealerTurn();
+        if(!player1.gameOver()) {
+            opponent.dealerTurn();
+        }
         opponent.viewHand();
-        
+        cout << endl;
         results(opponent, player1);
 
         

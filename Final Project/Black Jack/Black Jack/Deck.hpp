@@ -14,6 +14,7 @@
 
 
 #define DECK_SIZE 52
+#define RAND_NUM rand() % cards.size()
 
 using namespace std;
 
@@ -26,7 +27,7 @@ public:
     int drawCard();
     void reinit();
     int getCardsRemaining();
-    void dealerTurn();
+    void shuffle(const int numOfShuffles = 1);
 };
 
 #endif /* Deck_hpp */

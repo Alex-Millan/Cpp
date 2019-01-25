@@ -54,3 +54,13 @@ void Deck::reinit() {
         cards.push_back((i%13) + 1);
     }
 }
+
+void Deck::shuffle(const int numOfShuffles) {
+    srand((unsigned int)time(NULL));
+    for (int j = 0; j < numOfShuffles; j++) {
+        for (int i = 0; i < DECK_SIZE; i++) {
+            swap(cards[RAND_NUM], cards[RAND_NUM]);
+        }
+        cout << "Shuffling . . . " << endl;
+    }
+}

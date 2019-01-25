@@ -41,7 +41,6 @@ private:
     bool isDealerTurn = false;
 public:
     void viewHand();
-    void finalHand();
     void dealerTurn();
 };
 

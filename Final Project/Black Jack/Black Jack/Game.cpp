@@ -70,6 +70,9 @@ void Dealer::viewHand() {
 
 void Dealer::dealerTurn() {
     isDealerTurn = true;
+    while(handValue() < 17){
+        draw();
+    }
 }
 
 
